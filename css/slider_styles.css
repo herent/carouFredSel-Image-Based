@@ -1,0 +1,14 @@
+
+.slides-container {
+     width: 444px;
+     height: 277px;
+     float: left;
+}
+.slide {
+     width: 444px;
+	height: 277px;
+}
+
+.slide-text {
+     display: block;
+}

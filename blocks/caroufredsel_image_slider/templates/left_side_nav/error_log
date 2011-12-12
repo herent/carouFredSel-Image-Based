@@ -1,0 +1,3 @@
+[23-Nov-2009 17:00:49] PHP Fatal error:  Call to undefined function _() in /home/asmiller/public_html/concreteplay/packages/asmiller_gallery/blocks/asmiller_gallery/templates/left_side_nav/view.php on line 1
+[23-Nov-2009 17:07:20] PHP Fatal error:  Call to undefined function _() in /home/asmiller/public_html/concreteplay/packages/asmiller_gallery/blocks/asmiller_gallery/templates/left_side_nav/view.php on line 1
+[23-Nov-2009 17:09:17] PHP Fatal error:  Call to undefined function _() in /home/asmiller/public_html/concreteplay/packages/asmiller_gallery/blocks/asmiller_gallery/templates/left_side_nav/view.php on line 1

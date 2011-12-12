@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="atLinkSelector">
+		<field name="avID" type="I" size="10">
+			<KEY/>
+			<DEFAULT value="0"/>
+			<UNSIGNED/>
+		</field>
+		<field name="includeLink" type="L">
+			<default value="0" />
+		</field>
+		<field name="linkType" type="C" size="255">
+		</field>
+		<field name="linkText" type="C" size="255">
+		</field>
+		<field name="linkURL" type="X2">
+		</field>
+		<field name="linkCID" type="I">
+			<unsigned />
+			<notnull />
+			<default value="0" />
+		</field>
+	</table>
+</schema>

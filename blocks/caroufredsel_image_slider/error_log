@@ -1,0 +1,7 @@
+[23-Nov-2009 17:09:42] PHP Fatal error:  Call to undefined function _() in /home/asmiller/public_html/concreteplay/packages/asmiller_gallery/blocks/asmiller_gallery/view.php on line 1
+[23-Nov-2009 17:10:07] PHP Fatal error:  Call to undefined function _() in /home/asmiller/public_html/concreteplay/packages/asmiller_gallery/blocks/asmiller_gallery/view.php on line 1
+[23-Nov-2009 17:10:16] PHP Fatal error:  Call to undefined function _() in /home/asmiller/public_html/concreteplay/packages/asmiller_gallery/blocks/asmiller_gallery/image_row_include.php on line 1
+[23-Nov-2009 17:10:24] PHP Fatal error:  Call to undefined function _() in /home/asmiller/public_html/concreteplay/packages/asmiller_gallery/blocks/asmiller_gallery/form_setup_html.php on line 2
+[23-Nov-2009 17:10:26] PHP Fatal error:  Call to undefined function _() in /home/asmiller/public_html/concreteplay/packages/asmiller_gallery/blocks/asmiller_gallery/fileset_row_include.php on line 1
+[23-Nov-2009 17:10:28] PHP Fatal error:  Call to undefined function _() in /home/asmiller/public_html/concreteplay/packages/asmiller_gallery/blocks/asmiller_gallery/edit.php on line 2
+[23-Nov-2009 17:11:19] PHP Fatal error:  Call to undefined function _() in /home/asmiller/public_html/concreteplay/packages/asmiller_gallery/blocks/asmiller_gallery/controller.php on line 2
