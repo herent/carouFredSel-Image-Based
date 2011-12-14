@@ -1,15 +1,15 @@
 var caroufredselImageSlider = {
 	
 	init:function(){
-          if ($("#newImg select[name=type]").val() == 'FILESET') {
-               $("#newImg select[name=type]").val('FILESET');
+          if ($("#type").val() == 'FILESET') {
+               $("#type").val('FILESET');
                caroufredselImageSlider.showFileSet();
           } else {
-               $("#newImg select[name=type]").val('CUSTOM');
+               $("#type").val('CUSTOM');
                caroufredselImageSlider.showImages();
           }
 
-          $("#newImg select[name=type]").change(function(){
+          $("#type").change(function(){
                if (this.value == 'FILESET') {
                     caroufredselImageSlider.showFileSet();
                } else {
@@ -30,7 +30,7 @@ var caroufredselImageSlider = {
 
 	showFileSet:function(){
 		$("#caroufredselImageSlider-imgRows").hide();
-		$("#caroufredselImageSliderk-chooseImg").hide();
+		$("#caroufredselImageSlider-chooseImg").hide();
 		$("#caroufredselImageSlider-fsRow").show();
 	},
 
@@ -51,14 +51,16 @@ var caroufredselImageSlider = {
 		var templateHTML=$('#imgRowTemplateWrap .caroufredselImageSlider-imgRow').html().replace(/tempFID/g,fID);
 		templateHTML=templateHTML.replace(/tempThumbPath/g,thumbPath);
 		templateHTML=templateHTML.replace(/tempFilename/g,title);
-		templateHTML=templateHTML.replace(/tempGalleryImgId/g,GalleryImgId).replace(/tempHeight/g,imgHeight);
+		templateHTML=templateHTML.replace(/tempGalleryImgId/g,fID).replace(/tempHeight/g,imgHeight);
+		$(templateHTML).find('a.btn').dialog();
 		var imgRow = document.createElement("div");
 		imgRow.innerHTML=templateHTML;
-		imgRow.id='caroufredselImageSlider-imgRow'+parseInt(GalleryImgId);
+		imgRow.id='caroufredselImageSlider-imgRow'+parseInt(fID);
 		imgRow.className='caroufredselImageSlider-imgRow';
 		document.getElementById('caroufredselImageSlider-imgRows').appendChild(imgRow);
 		var bgRow=$('#caroufredselImageSlider-imgRow'+parseInt(fID)+' .backgroundRow');
 		bgRow.css('background','url('+thumbPath+') no-repeat left top');
+		$("#caroufredselImageSlider-imgRow"+parseInt(fID)+" a.btn").dialog();
 	},
 	
 	removeImage: function(fID){
