@@ -23,12 +23,12 @@ if ($setAttribs) {?>
           
           $(function(){
                // close the dialog if cancel is clicked;
-               $("#form-cancel").click(function(){
+               $("#cancel").click(function(){
                     jQuery.fn.dialog.closeTop();
                });
 
                // if save is clicked submit the form
-               $("#form-save").click(function(){
+               $("#save").click(function(){
                     sendform();
                     return false;
                });
