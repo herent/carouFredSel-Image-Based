@@ -108,13 +108,14 @@ var caroufredselImageSlider = {
 	},	
 
 	validate:function(){
+		alert("VALIDATE");
 		var failed=0; 
 		
-		if ($("#newImg select[name=type]").val() == 'FILESET')
+		if ($("#type").val() == 'FILESET')
 		{
 			if ($("#caroufredselImageSlider-fsRow input[name=fsID]").val() <= 0) {
 				alert(ccm_t('choose-fileset'));
-				$('#textAndImageGalleryBlock-AddImg').focus();
+				$('#fsID').focus();
 				failed=1;
 			}	
 		} else {
@@ -134,7 +135,7 @@ var caroufredselImageSlider = {
 	}
 }
 
-ccmValidateBlockForm = function() { return caroufredselImageSlider.validate(); }
+ccmValidateBlockForm = function() { alert("HELLO") }
 ccm_chooseAsset = function(obj) { caroufredselImageSlider.selectObj(obj); }
 
 $(function() {

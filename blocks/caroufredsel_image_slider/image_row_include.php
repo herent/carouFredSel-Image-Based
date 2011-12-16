@@ -13,7 +13,7 @@ $uID = $u->getUserID();?>
 		</div>
 		<strong><?php   echo $imgInfo['fileName']?></strong><br/><br/>
           <a href="<?php echo $tool_helper->getToolsURL('image_slider_attributes', 'caroufredsel_image_slider');?>?fID=<?php   echo $imgInfo['GalleryImgId']?>&uID=<?php echo $uID;?>" 
-		   dialog-title="<?php echo t("Edit Attributes - Image %s",$imgInfo['fileName']);?>"
+		   dialog-title="<?php echo t("Edit Attributes - %s",$imgInfo['fileName']);?>"
 		   dialog-modal="false"
 		   dialog-width="580" 
 		   dialog-height="420" 
