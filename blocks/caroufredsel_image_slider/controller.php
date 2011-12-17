@@ -46,6 +46,18 @@ class CaroufredselImageSliderBlockController extends BlockController {
           $this->set('staticTitle1', $this->staticTitle1);
           $this->set('staticTitle2', $this->staticTitle2);
           $this->set('staticParagraphText', $this->staticParagraphText);
+		$this->addHeaderItem(Loader::helper('html')->css('ccm.dialog.css'));
+			$this->addHeaderItem(Loader::helper('html')->css('ccm.forms.css'));
+			$this->addHeaderItem(Loader::helper('html')->css('ccm.filemanager.css'));
+			$this->addHeaderItem(Loader::helper('html')->css('ccm.search.css'));
+			$this->addHeaderItem(Loader::helper('html')->css('ccm.menus.css'));
+			$this->addHeaderItem(Loader::helper('html')->javascript('ccm.filemanager.js'));
+			$this->addHeaderItem(Loader::helper('html')->javascript('ccm.dialog.js'));
+			$this->addHeaderItem(Loader::helper('html')->javascript('ccm.ui.js'));
+			$this->addHeaderItem(Loader::helper('html')->javascript('jquery.form.js'));
+			$this->addHeaderItem(Loader::helper('html')->javascript('jquery.liveupdate.js'));
+			$this->addHeaderItem(Loader::helper('html')->javascript('ccm.search.js'));
+			$this->addHeaderItem('<script type="text/javascript" src="' . REL_DIR_FILES_TOOLS_REQUIRED . '/i18n_js"></script>'); 
 	}	
 	
 	function view(){
