@@ -134,8 +134,8 @@ var caroufredselImageSlider = {
 		return true;
 	}
 }
-
-ccmValidateBlockForm = function() { alert("HELLO") }
+debugger;
+ccmValidateBlockForm = function() { debugger; }
 ccm_chooseAsset = function(obj) { caroufredselImageSlider.selectObj(obj); }
 
 $(function() {

@@ -42,22 +42,6 @@ class CaroufredselImageSliderBlockController extends BlockController {
 		$type = ($this->fsID > 0) ? 'FILESET' : 'CUSTOM';
 		$this->set('type', $type);
 		$this->set('bID', $this->bID);
-          $this->set('staticText', $this->staticText);
-          $this->set('staticTitle1', $this->staticTitle1);
-          $this->set('staticTitle2', $this->staticTitle2);
-          $this->set('staticParagraphText', $this->staticParagraphText);
-		$this->addHeaderItem(Loader::helper('html')->css('ccm.dialog.css'));
-			$this->addHeaderItem(Loader::helper('html')->css('ccm.forms.css'));
-			$this->addHeaderItem(Loader::helper('html')->css('ccm.filemanager.css'));
-			$this->addHeaderItem(Loader::helper('html')->css('ccm.search.css'));
-			$this->addHeaderItem(Loader::helper('html')->css('ccm.menus.css'));
-			$this->addHeaderItem(Loader::helper('html')->javascript('ccm.filemanager.js'));
-			$this->addHeaderItem(Loader::helper('html')->javascript('ccm.dialog.js'));
-			$this->addHeaderItem(Loader::helper('html')->javascript('ccm.ui.js'));
-			$this->addHeaderItem(Loader::helper('html')->javascript('jquery.form.js'));
-			$this->addHeaderItem(Loader::helper('html')->javascript('jquery.liveupdate.js'));
-			$this->addHeaderItem(Loader::helper('html')->javascript('ccm.search.js'));
-			$this->addHeaderItem('<script type="text/javascript" src="' . REL_DIR_FILES_TOOLS_REQUIRED . '/i18n_js"></script>'); 
 	}	
 	
 	function view(){
@@ -132,18 +116,7 @@ class CaroufredselImageSliderBlockController extends BlockController {
 		parent::delete();
 	}
 	
-	function save($data) { 		
-		if (intval($data['staticText']) == 1){
-               $args['staticText'] = 1;
-               $args['staticTitle1'] = $data['staticTitle1'];
-               $args['staticTitle2'] = $data['staticTitle2'];
-               $args['staticParagraphText'] = $data['staticParagraphText'];
-          } else {
-               $args['staticText'] = 0;
-               $args['staticTitle1'] = "";
-               $args['staticTitle2'] = "";
-               $args['staticParagraphText'] = "";
-          }
+	function save($data) { 
 		if( $data['type'] == 'FILESET' && $data['fsID'] > 0){
 			$args['fsID'] = $data['fsID'];
 
@@ -164,14 +137,9 @@ class CaroufredselImageSliderBlockController extends BlockController {
 				$vals = array(
                          intval($this->bID),
                          intval($imgFID),
-                         trim($data['title1'][$pos]),
-                         trim($data['title2'][$pos]),
-                         trim($data['paragraph'][$pos]),
                          $pos
 					);
-					
-
-				$this->db->query("INSERT INTO btCaroufredselImageSliderImg (bID,fID,title1,title2,paragraph,position) values (?,?,?,?,?,?)",$vals);
+				$this->db->query("INSERT INTO btCaroufredselImageSliderImg (bID,fID,position) values (?,?,?)",$vals);
 				$pos++;
 			}
 		}

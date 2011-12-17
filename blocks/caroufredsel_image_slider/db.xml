@@ -7,17 +7,6 @@
 			<unsigned />
 		</field>
 		<field name="fsID" type="I"><unsigned /></field>
-		<field name="staticText" type="I1">
-			<unsigned />
-			<notnull />
-			<default value="0" />
-		</field>
-          <field name="staticTitle1" type="C" size="255">
-          </field>
-          <field name="staticTitle2" type="C" size="255">
-          </field>
-          <field name="staticParagraphText" type="X2">
-          </field>
 	</table>
 	
 	<table name="btCaroufredselImageSliderImg">
@@ -29,12 +18,6 @@
 		<field name="bID" type="I"><unsigned /></field>
 		<field name="fID" type="I"><unsigned /></field>		
 		<field name="position" type="I"><unsigned /></field>
-          <field name="title1" type="C" size="255">
-          </field>
-          <field name="title2" type="C" size="255">
-          </field>
-          <field name="paragraph" type="X2">
-          </field>
 	</table>
 	
 </schema>
