@@ -1,0 +1,22 @@
+.caroufredsel-basic-image-carousel {
+	width: 754px;
+	padding: 15px 22px;
+	border: 1px solid #555;
+	min-height: 180px;
+}
+.caroufredsel-basic-image-carousel .caroufredsel_wrapper {
+}
+.caroufredsel-basic-image-carousel .slide {
+	width: 210px;
+	height: 210px;
+	background-color: #FFF !important;
+	border: 1px solid #555;
+	padding: 10px;
+	display: block;
+	margin: 10px;
+	float: left;
+}
+.caroufredsel-clearfix {
+	float: none;
+	clear: both;
+}

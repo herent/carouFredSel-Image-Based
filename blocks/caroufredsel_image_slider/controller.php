@@ -5,14 +5,14 @@ class CaroufredselImageSliderBlockController extends BlockController {
 	var $pobj;
 	
 	protected $btTable = 'btCaroufredselImageSlider';
-	protected $btInterfaceWidth = "550";
-	protected $btInterfaceHeight = "400";
+	protected $btInterfaceWidth = "580";
+	protected $btInterfaceHeight = "420";
 
 	/** 
 	 * Used for localization. If we want to localize the name/description we have to include this
 	 */
 	public function getBlockTypeDescription() {
-		return t("Display a gallery of images with two titles and a text area.");
+		return t("Display a carousel of images and their attributes.");
 	}
 	
 	public function getBlockTypeName() {
@@ -35,7 +35,6 @@ class CaroufredselImageSliderBlockController extends BlockController {
 		} else {
 			$this->loadFileSet();
 		}
-		$this->set('minHeight', $this->minHeight);
 		$this->set('fsID', $this->fsID);
 		$this->set('fsName', $this->getFileSetName());
 		$this->set('images', $this->images);
@@ -49,9 +48,9 @@ class CaroufredselImageSliderBlockController extends BlockController {
 	
 	public function on_page_view() {
 		$html = Loader::helper('html');
-		$this->addHeaderItem($html->javascript('gallery_animation.js', 'text_and_image_gallery'));
-		$this->addHeaderItem($html->javascript('jquery.easing.1.3.js', 'text_and_image_gallery'));
-          $this->addHeaderItem($html->css('slider_styles.css', 'text_and_image_gallery'));
+		$this->addHeaderItem($html->javascript('jquery.carouFredSel-5.4.0-packed.js', 'caroufredsel_image_slider'));
+		$this->addHeaderItem($html->javascript('jquery.easing.1.3.js', 'caroufredsel_image_slider'));
+          $this->addHeaderItem($html->css('slider_styles.css', 'caroufredsel_image_slider'));
 	}
 	
 	function getFileSetName(){
@@ -145,6 +144,15 @@ class CaroufredselImageSliderBlockController extends BlockController {
 		}
 		
 		parent::save($args);
+	}
+	
+	function duplicate($newBID){
+		$db = Loader::db();
+		if ($this->fsID > 0){
+			$sql = "UPDATE btCaroufredselImageSliderImage set bID = ? WHERE bID = ?";
+			$val = array($newBID, $this->bID);
+		}
+		return parent::dupblicate($newBID);
 	}
 	
 }

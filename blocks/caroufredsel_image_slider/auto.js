@@ -16,6 +16,8 @@ var caroufredselImageSlider = {
                     caroufredselImageSlider.showImages();
                }
           });
+		
+		$(".caroufredselImageSlider-imgRow a.btn").dialog();
 
      },
 	chooseImg:function(){ 
@@ -108,7 +110,6 @@ var caroufredselImageSlider = {
 	},	
 
 	validate:function(){
-		alert("VALIDATE");
 		var failed=0; 
 		
 		if ($("#type").val() == 'FILESET')
@@ -134,8 +135,8 @@ var caroufredselImageSlider = {
 		return true;
 	}
 }
-debugger;
-ccmValidateBlockForm = function() { debugger; }
+
+ccmValidateBlockForm = function() { caroufredselImageSlider.validate(); }
 ccm_chooseAsset = function(obj) { caroufredselImageSlider.selectObj(obj); }
 
 $(function() {

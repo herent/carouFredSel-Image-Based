@@ -1,0 +1,91 @@
+.caroufredsel-single-slide-full-html-carousel {
+	width: 800px;
+	border: 1px solid #555;
+	position: relative;
+}
+.caroufredsel-single-slide-full-html-carousel .caroufredsel_wrapper {
+}
+.caroufredsel-single-slide-full-html-carousel .caroufredsel-slide {
+	width: 800px;
+	display: block;
+	float: left;
+}
+.caroufredsel-single-slide-full-html-carousel .caroufredsel-slide .caroufredsel-title,
+.caroufredsel-single-slide-full-html-carousel .caroufredsel-slide .caroufredsel-text,
+.caroufredsel-single-slide-full-html-carousel .caroufredsel-slide .caroufredsel-link{
+	margin-left: 500px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	background-color: #FFF;
+}
+.caroufredsel-single-slide-full-html-carousel .caroufredsel-slide .caroufredsel-link {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+.caroufredsel-single-slide-full-html-carousel a.caroufredsel-next,
+.caroufredsel-single-slide-full-html-carousel a.caroufredsel-prev {
+	background: #efefef url(prev.png) no-repeat 50% 50%;
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+}
+.caroufredsel-single-slide-full-html-carousel a.caroufredsel-prev {
+	left: -20px;
+}
+.caroufredsel-single-slide-full-html-carousel a.caroufredsel-prev:hover,
+.caroufredsel-single-slide-full-html-carousel a.caroufredsel-next:hover{
+	background-color: #cfcfcf;
+}
+.caroufredsel-single-slide-full-html-carousel a.caroufredsel-prev.disabled,
+.caroufredsel-single-slide-full-html-carousel a.caroufredsel-next.disabled{
+	background-color: #dfdfdf;
+	background-image: none !important;
+	
+}
+.caroufredsel-single-slide-full-html-carousel a.caroufredsel-next {
+	right: -20px;
+	background-image: url(next.png);
+}
+.caroufredsel-single-slide-full-html-carousel a.disabled {
+	cursor: default;
+	
+}
+.caroufredsel-single-slide-full-html-carousel a.caroufredsel-next span,
+.caroufredsel-single-slide-full-html-carousel a.caroufredsel-prev span {
+	display: none;
+}
+.caroufredsel-single-slide-full-html-carousel .caroufredsel-pagination{ 
+	text-align: center;
+}
+.caroufredsel-single-slide-full-html-carousel .caroufredsel-pagination a {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+}
+.caroufredsel-single-slide-full-html-carousel .caroufredsel-pagination a.selected {
+	background-color: #cfcfcf;
+}
+.caroufredsel-single-slide-full-html-carousel .caroufredsel-pagination a span {
+	display: none;
+}
+.caroufredsel-clearfix {
+	float: none;
+	clear: both;
+}

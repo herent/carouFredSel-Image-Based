@@ -45,9 +45,7 @@ if ($setAttribs) {?>
 		
 		// submit the form via ajax submit call
 		function sendform(){
-			if (tinyMCE){
-				tinyMCE.triggerSave();
-			}
+			tinyMCE.triggerSave();
 			$("#attributes-form").ajaxSubmit({
 				dataType:'json',
 				type:'post',
@@ -77,11 +75,6 @@ if ($setAttribs) {?>
 		font-weight: bold;
 	}
 	.slider-attributes .field {
-		display: block;
-	}
-	.ccm-ui {
-		background-color: #ccc;
-		padding: 15px;
 		display: block;
 	}
 </style>

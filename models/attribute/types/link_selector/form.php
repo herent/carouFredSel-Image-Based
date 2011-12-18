@@ -16,8 +16,11 @@ $pageSelector = Loader::helper('form/page_selector');
 	<?php if ($linkType == "manual"){?>
 	#link-url-wrap<?php echo $key->getAttributeKeyID()?>{ display: block;}
 	#link-cid-wrap<?php echo $key->getAttributeKeyID()?>{ display: none;}
-	<?php } else { ?>
+	<?php } else if ($linkType == "sitemap"){ ?>
 	#link-url-wrap<?php echo $key->getAttributeKeyID()?>{ display: block;}
+	#link-cid-wrap<?php echo $key->getAttributeKeyID()?>{ display: none;}
+	<?php } else {?>
+	#link-url-wrap<?php echo $key->getAttributeKeyID()?>{ display: none;}
 	#link-cid-wrap<?php echo $key->getAttributeKeyID()?>{ display: none;}
 	<?php } ?>
 </style>

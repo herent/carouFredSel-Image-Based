@@ -1,0 +1,83 @@
+.caroufredsel-basic-buttons-and-pagination-carousel {
+	width: 754px;
+	padding: 15px 22px;
+	border: 1px solid #555;
+	min-height: 180px;
+	position: relative;
+}
+.caroufredsel-basic-buttons-and-pagination-carousel .caroufredsel_wrapper {
+}
+.caroufredsel-basic-buttons-and-pagination-carousel .slide {
+	width: 300px;
+	height: 300px;
+	background-color: #FFF !important;
+	border: 1px solid #555;
+	padding: 10px;
+	display: block;
+	margin: 10px;
+	float: left;
+}
+.caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-next,
+.caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-prev {
+	background: #efefef url(prev.png) no-repeat 50% 50%;
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+}
+.caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-prev {
+	left: -20px;
+}
+.caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-prev:hover,
+.caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-next:hover{
+	background-color: #cfcfcf;
+}
+.caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-prev.disabled,
+.caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-next.disabled{
+	background-color: #dfdfdf;
+	background-image: none !important;
+	
+}
+.caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-next {
+	right: -20px;
+	background-image: url(next.png);
+}
+.caroufredsel-basic-buttons-and-pagination-carousel a.disabled {
+	cursor: default;
+	
+}
+.caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-next span,
+.caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-prev span {
+	display: none;
+}
+.caroufredsel-basic-buttons-and-pagination-carousel .caroufredsel-pagination{ 
+	text-align: center;
+}
+.caroufredsel-basic-buttons-and-pagination-carousel .caroufredsel-pagination a {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+}
+.caroufredsel-basic-buttons-and-pagination-carousel .caroufredsel-pagination a.selected {
+	background-color: #cfcfcf;
+}
+.caroufredsel-basic-buttons-and-pagination-carousel .caroufredsel-pagination a span {
+	display: none;
+}
+.caroufredsel-clearfix {
+	float: none;
+	clear: both;
+}

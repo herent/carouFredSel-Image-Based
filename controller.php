@@ -23,7 +23,6 @@ class CaroufredselImageSliderPackage extends Package {
 		Loader::model('attribute/categories/file');
 		// install block		
 		BlockType::installBlockTypeFromPackage('caroufredsel_image_slider', $pkg);
-		BlockType::installBlockTypeFromPackage('basic_test', $pkg);
 		
 		$eaku = AttributeKeyCategory::getByHandle('file');
 		$eaku->setAllowAttributeSets(AttributeKeyCategory::ASET_ALLOW_SINGLE);

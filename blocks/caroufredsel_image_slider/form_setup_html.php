@@ -109,4 +109,3 @@ $ah = Loader::helper('concrete/interface');
 		<?php $this->inc('image_row_include.php', array('imgInfo' => $imgInfo)); ?>
 	</div>
 </div>
-</div>
