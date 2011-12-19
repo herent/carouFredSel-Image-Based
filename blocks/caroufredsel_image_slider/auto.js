@@ -17,7 +17,7 @@ var caroufredselImageSlider = {
                }
           });
 		
-		$(".caroufredselImageSlider-imgRow a.btn").dialog();
+		$(".caroufredselImageSlider-imgRow a.caroufredsel-btn").dialog();
 
      },
 	chooseImg:function(){ 
@@ -62,7 +62,7 @@ var caroufredselImageSlider = {
 		document.getElementById('caroufredselImageSlider-imgRows').appendChild(imgRow);
 		var bgRow=$('#caroufredselImageSlider-imgRow'+parseInt(fID)+' .backgroundRow');
 		bgRow.css('background','url('+thumbPath+') no-repeat left top');
-		$("#caroufredselImageSlider-imgRow"+parseInt(fID)+" a.btn").dialog();
+		$("#caroufredselImageSlider-imgRow"+parseInt(fID)+" a.caroufredsel-btn").dialog();
 	},
 	
 	removeImage: function(fID){

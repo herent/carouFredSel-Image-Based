@@ -18,7 +18,7 @@ $uID = $u->getUserID();?>
 		   dialog-width="580" 
 		   dialog-height="420" 
 		   dialog-append-buttons="true"
-		   class="btn"><?php echo t("Edit Attributes");?></a>
+		   class="caroufredsel-btn"><?php echo t("Edit Attributes");?></a>
 		<input type="hidden" name="imgFIDs[]" value="<?php   echo $imgInfo['fID']?>">
 	</div>
 </div>

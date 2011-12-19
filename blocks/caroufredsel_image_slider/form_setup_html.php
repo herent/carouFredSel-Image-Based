@@ -50,7 +50,12 @@ $ah = Loader::helper('concrete/interface');
           width:35px;
           text-align:left;
      }
-
+	.caroufredsel-btn {
+		padding: 3px 15px;
+		border: 1px solid #ccc;
+		background-color: #F0F0F0;
+		text-decoration: none;
+	}
 </style>
 <div class="ccm-ui">
 	<div class="ccm-input-wrap">

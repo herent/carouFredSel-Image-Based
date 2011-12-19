@@ -26,13 +26,17 @@
 	position: absolute;
 	top: 50%;
 	margin-top: -20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-khtml-border-radius: 20px;
-	border-radius: 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	-webkit-border-radius: 0 0 20px 20px;
+	-khtml-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
 }
 .caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-prev {
-	left: -20px;
+	left: -40px;
+	-moz-border-radius: 20px 20px 0 0;
+	-webkit-border-radius: 20px 20px 0 0;
+	-khtml-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
 }
 .caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-prev:hover,
 .caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-next:hover{
@@ -45,7 +49,7 @@
 	
 }
 .caroufredsel-basic-buttons-and-pagination-carousel a.caroufredsel-next {
-	right: -20px;
+	right: -40px;
 	background-image: url(next.png);
 }
 .caroufredsel-basic-buttons-and-pagination-carousel a.disabled {
